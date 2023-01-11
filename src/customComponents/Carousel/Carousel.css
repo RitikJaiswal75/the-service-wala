@@ -1,0 +1,17 @@
+.Carousel > img{
+    width: 100%;
+    height: 70vh;
+}
+
+.Carousel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 750px){
+    .Carousel > img{
+        width: 100%;
+        height: 50vh;
+    }
+}

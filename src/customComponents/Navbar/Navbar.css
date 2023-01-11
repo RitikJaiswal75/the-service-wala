@@ -1,0 +1,108 @@
+@import url(../../constants/colours.css);
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0;
+  font-weight: 500;
+}
+
+nav {
+  width: 100%;
+  box-shadow: 0px 1px 5px var(--shadow);
+  position: fixed;
+  background-color: var(--light-background);
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: .2rem;
+  width: 100px;
+  height: 50px;
+}
+
+.logo-container{
+  width: 5%;
+}
+
+.menu {
+  width: 40%;
+  margin: 0;
+}
+
+.menu > li {
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.menu > li:hover {
+  background-color: var(--dark-background);
+  transition: ease-in-out 0.2s;
+}
+
+.menu > li:hover > a {
+  color: var(--hover-text-color);
+  transition: ease-in-out 0.2s;
+}
+
+.social {
+  margin: auto 0;
+  width: 20%;
+  margin-right: 1rem;
+}
+
+.social > li {
+  font-size: 24px;
+}
+
+.social > li:hover > a {
+  color: var(--hover-text-color);
+  transition: ease-in-out 0.2s;
+}
+
+@media screen and (max-width: 800px) {
+  .d-flex {
+    display: block;
+  }
+
+  .d-flex > .social, .menu{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .logo-container{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .d-flex{
+    display: block;
+  }
+  .menu{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+  .logo-container{
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+  }
+}

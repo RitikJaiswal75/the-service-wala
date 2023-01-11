@@ -1,0 +1,6 @@
+@import url('../../constants/colours.css');
+
+footer{
+    background-color: var(--dark-background);
+    text-align: center;
+}
