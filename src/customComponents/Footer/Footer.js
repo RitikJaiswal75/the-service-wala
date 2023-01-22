@@ -1,11 +1,7 @@
-import './Footer.css'
+import "./Footer.css";
 
-function Footer(props){
-    return(
-        <footer>
-            {props.developer}
-        </footer>
-    )
+function Footer(props) {
+  return <footer>{props.developer}</footer>;
 }
 
 export default Footer;

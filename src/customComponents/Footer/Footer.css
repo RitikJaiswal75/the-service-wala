@@ -1,6 +1,6 @@
-@import url('../../constants/colours.css');
+@import url("../../constants/colours.css");
 
-footer{
-    background-color: var(--dark-background);
-    text-align: center;
+footer {
+  background-color: var(--dark-background);
+  text-align: center;
 }
