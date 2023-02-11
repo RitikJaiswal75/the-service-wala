@@ -36,7 +36,10 @@ function App() {
         short_description="Want to get in touch? We are available on: "
         content="hello world"
       />
-      <Footer developer="© 2023-The service wala-All rights reserved" />
+      <Footer 
+      company="© 2023-The service wala-All rights reserved" 
+      developer="Developed by Ritik jaiswal solutions" 
+      />
     </div>
   );
 }

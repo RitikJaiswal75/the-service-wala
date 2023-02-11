@@ -20,7 +20,6 @@
 }
 .bimg img{
     width: 60%;
-   
     margin-top: 50px;
     justify-content: center;
     margin: auto;
@@ -38,4 +37,17 @@
 
 .bimg img:hover{
     transform: scale(1.1);
+}
+.bimgg img:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width:450px) {
+    .bimg img{
+        width: 80%;
+        
+    }
+    .bimgg img{
+        width: 35%;
+        
+    }
 }

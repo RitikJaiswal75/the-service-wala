@@ -28,20 +28,4 @@ const Card = ({Data}) => {
 };
 
 
-
-
-
-// function Card(props) {
-//   return (
-//     <div className="card">
-//       <div className="image-container">
-//         <img src="./assets/first.png" alt="zscz"></img>
-//       </div>
-//       <div className="description">
-//         <p>So i have a simple button with a shiny effect run through using ::after and transform.So i have a simple button with a shiny effect run through using ::after and transform.So i have a simple button with a shiny effect run through using ::after and transform.So i have a simple button with a shiny effect run through using ::after and transform.So i have a simple button with a shiny effect run through using ::after and transform.</p>
-//       </div>
-//     </div>
-//   );
-// }
-
 export default Card;
