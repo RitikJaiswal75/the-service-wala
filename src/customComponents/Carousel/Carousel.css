@@ -1,17 +1,53 @@
 .Carousel > img {
+  /* width: 100%;
+  height: 80vh; */
   width: 100%;
-  height: 70vh;
+  max-height: 85vh;
+  display: block;
+  animation-duration: 15s;
+  animation-name: vanish;
+  animation-iteration-count: infinite;
 }
 
 .Carousel {
   width: 100%;
   display: flex;
   justify-content: center;
+  /* background: red;   */
+  overflow: hidden;
+  animation-duration: 5s;
+  animation-name: van;
 }
 
 @media only screen and (max-width: 750px) {
   .Carousel > img {
     width: 100%;
-    height: 50vh;
+    height: 45vh;
   }
+}
+
+@keyframes vanish {
+  0%{
+    transform: scale(1.2);  
+  }
+  50%{
+    transform: scale(1.2);}
+  100%{
+      transform: scale(1.3);
+      }
+  0%{
+        transform: scale(1.3);}    
+
+}
+
+@keyframes van {
+  0%{
+    transform: scale(1.2);
+    opacity: 0;  
+  }
+  100%{
+    opacity: 1;  
+  }
+      
+
 }

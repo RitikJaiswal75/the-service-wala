@@ -1,0 +1,41 @@
+.slide{
+    background:var(--dark-background);
+    width: 100%;
+    margin-top:4% ;
+    height:25vh;
+    overflow: hidden;
+}
+
+@media screen and (max-width:800px) {
+    .slide{
+
+       height: 15vh;
+    }
+}
+@media screen and (min-width:801px) and (max-width:1100px){
+    .slide{
+
+       height: 18vh;
+    }
+}
+.bimg img{
+    width: 60%;
+   
+    margin-top: 50px;
+    justify-content: center;
+    margin: auto;
+    padding-top:20px ;
+    transition: 0.5s;
+}
+.bimgg img{
+    width: 28%;
+    margin-top: 50px;
+    justify-content: center;
+    margin: auto;
+    padding-top:20px ;
+    transition: 0.5s;
+}
+
+.bimg img:hover{
+    transform: scale(1.1);
+}

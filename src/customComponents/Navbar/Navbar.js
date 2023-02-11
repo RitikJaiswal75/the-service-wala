@@ -1,6 +1,7 @@
 import "remixicon/fonts/remixicon.css";
 import { socialIcon } from "../../constants/icons";
 import "./Navbar.css";
+import Hamburger from 'hamburger-react'
 
 function Navbar(props) {
   const options = [];
@@ -25,14 +26,41 @@ function Navbar(props) {
     });
   }
 
+  //mobile view navbar code
+  function checkMediaQuery() {
+    var showhide = document.getElementById('hide');
+    if (window.innerWidth > 400) {
+      showhide.style.display = "flex";
+    }
+  }
+  
+
+  window.addEventListener('resize', checkMediaQuery);
+
+  function myFunction() {
+  var showhide = document.getElementById('hide');
+    
+    if (showhide.style.display === "grid") {
+      showhide.style.display = "none";
+    }
+    else {
+      showhide.style.display = "grid";
+    } 
+
+  }
+
   return (
     <nav className="d-flex navbar" id="Navbar">
+
       <div className="logo-container">
         <a href="/">
           <img src={props.logo} className="logo" alt="Brand Logo" />
         </a>
       </div>
-      <ul className="d-flex menu">{options}</ul>
+      <div id="cross" onClick={myFunction}>
+        <Hamburger />
+      </div>
+      <ul className="d-flex menu" id="hide">{options}</ul>
       {props.socialOptions ? <ul className="d-flex menu">{options}</ul> : null}
     </nav>
   );

@@ -3,4 +3,5 @@
 footer {
   background-color: var(--dark-background);
   text-align: center;
+  padding: 30px;
 }

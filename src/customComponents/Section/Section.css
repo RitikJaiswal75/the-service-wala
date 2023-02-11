@@ -11,10 +11,148 @@
 }
 
 .card-holder {
-  width: 90%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 200px));
+  grid-gap: 50px;
+  justify-content: space-around;
+}
+
+
+/* icon css */
+
+.icons{
+  /* position: relative; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  grid-gap: 0px;
+  justify-content: space-around;
+  
+}
+
+
+.block1{
+  position: relative;
+  width: 100%;
+  height: 18vh;
+  margin: 50px;
+  left: -30px;
+}
+
+@media screen and (max-width:630px) {
+  .block1{
+    left: -50px;
+  }  
+}
+
+.block1 img{
+  position: absolute;
+  width:27%;
+  left: 0;
+  right: 0;
   margin: 0 auto;
-  justify-items: center;
+  top: 0;
+}
+.block1 a{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 110%;
+}
+.block1 p{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 110%;
+}
+
+.block1 a:hover{
+  color:var(--hover-text-color);
+}
+
+.commu{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  grid-gap: 0px;
+  justify-content: space-around;
+}
+
+.whats{
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  left: 80px;
+}
+.whats img{
+  position: absolute;
+  width: 30%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  
+}
+.whats p{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 50px;
+}
+.map{
+  position: relative;
+  width: 400px;
+  height: 60vh;
+  left: -100px;
+}
+.map iframe{
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  top: 0;
+}
+
+.map p{
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+
+}
+
+@media screen and (max-width:1360px) {
+  .map{
+    width: 100%;
+    height: 45vh;
+    left: 7%;
+    
+  }
+
+  .map iframe{
+    position: absolute;
+    width: 100%;
+    height: 35vh;
+    top: 0;
+  }
+
+  .whats{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    left: 7%;
+  }
+}
+
+@media screen and (max-width:630px) {
+  .commu{
+    margin-left: -40px;
+    margin-top: -20px;
+  }
+}
+
+@media screen and (max-width:507px) {
+  .block1 p{
+    top: 50px;
+  }
 }
