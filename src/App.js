@@ -20,17 +20,26 @@ function App() {
       <Section
         name="Services"
         short_description="We serve to your requests. Happy to help with"
-        content="hello world"
+        images={["../assets/indoor.png", "../assets/outdoor.png"]}
+        headings={["Indoor Products", "Outdoor Products"]}
+        items={[
+          ["Ceiling Fan", "Table Fan", "Wall Fan", "BLDC Fan"],
+          ["Street Light", "Flood Light"],
+        ]}
       />
       <Section
         name="Brands"
         short_description="We are authorized service providers for the following brands"
-        content="hello world"
+        images={[]}
+        headings={[]}
+        items={[]}
       />
       <Section
         name="Contact"
         short_description="Want to get in touch? We are available on: "
-        content="hello world"
+        images={[]}
+        headings={[]}
+        items={[]}
       />
       <Footer developer="This website is designed and developed by Jaiswal Business Solutions." />
     </div>
