@@ -1,10 +1,14 @@
 .card {
-  width: 15rem;
-  height: 20rem;
+  width: 25rem;
+  height: 30rem;
   border: 1px solid grey;
   border-radius: 0.5rem;
   margin: 1rem auto;
   transition: ease-in-out 0.3s;
+}
+
+img {
+  width: 100%;
 }
 
 .card:hover {
@@ -17,7 +21,6 @@
   height: 50%;
   margin: 0.3rem auto;
   border-radius: 0.5rem;
-  border: 1px solid red;
 }
 
 .description {
@@ -25,5 +28,8 @@
   height: 40%;
   margin: 0.3rem auto;
   border-radius: 0.5rem;
-  border: 1px solid red;
+}
+
+.card-heading {
+  text-align: center;
 }
